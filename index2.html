@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name=prompt('введите вашу фамилию');
+        var inkognito;
+        if(name===" "||name===""){
+            inkognito=('привет незнакомец');
+        }
+        else{
+            inkognito=name;
+        }
+
+        var name2=prompt('введите ваше имя');
+        var inkognito2;
+        if(name2===" "||name2===""){
+            inkognito2=('привет незнакомец');
+        }
+        else{
+            inkognito2=name2;
+        }
+
+        var name3=prompt('введите ваше отчество');
+        var inkognito3;
+        if(name3===" "||name3===""){
+            inkognit3o=('привет незнакомец');
+        }
+        else{
+            inkognito3=name3;
+        }
+
+        var age=Number(prompt('введите ваш возраст в годах'));
+        var old;
+        if(age>63){
+            old='Да';
+        }
+        else{
+            old='Нет';
+        }
+
+        var gnd=confirm('ваш пол мужской?');
+        var gender;
+        if(gnd==true){
+            gender="Мужской";
+        }
+        else{
+            gender="Женский";
+        }  
+      
+        alert('Ваше ФИО:' +inkognito+ ' ' +inkognito2+ ' ' +inkognito2+ '\n'+
+        'ваш возраст:' +age + '\n'+
+        'Ваш возраст в днях:'+ (age*365)+'\n'+
+        'Через 5 лет вам будет:'+ (age +5)+'\n'+
+        'Ваш пол:'+gender+'\n'+
+        'Вы на пенсии:'+old);
+    </script>
+</body>
+</html>
