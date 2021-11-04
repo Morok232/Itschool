@@ -8,52 +8,37 @@
 </head>
 <body>
     <script>   
+    do{
         var name=prompt('введите вашу фамилию');
-        var inkognito;
-        if(name===" "||name===""){
-            inkognito=('привет незнакомец');
-        }
-        else{
-            inkognito=name;
-        }
+     }
+        while(name===""||name===" ");
 
+
+    do{
         var name2=prompt('введите ваше имя');
-        var inkognito2;
-        if(name2===" "||name2===""){
-            inkognito2=('привет незнакомец');
-        }
-        else{
-            inkognito2=name2;
-        }
+     }
+        while(name2===" "||name2==="");
 
+      
+     do{
         var name3=prompt('введите ваше отчество');
-        var inkognito3;
-        if(name3===" "||name3===""){
-            inkognit3o=('привет незнакомец');
-        }
-        else{
-            inkognito3=name3;
-        }
+     }
+        while(name3===" "||name3==="");
+
 
         var age=Number(prompt('введите ваш возраст в годах'));
-        var old;
-        if(age>63){
-            old='Да';
-        }
-        else{
-            old='Нет';
-        }
+   
 
-        var gnd=confirm('ваш пол мужской?');
-        var gender;
-        if(gnd==true){
+        var gender=confirm('ваш пол мужской?');
+        if(gender==true){
             gender="Мужской";
+            var old=(age>63)?'Да':'Нет';
         }
         else{
             gender="Женский";
+            var old=(age>58)?'Да':'Нет';
         }  
-      
-        alert('Ваше ФИО:' +inkognito+ ' ' +inkognito2+ ' ' +inkognito2+ '\n'+
+        alert('Ваше ФИО:' +name+ ' ' +name2+ ' ' +name3+ '\n'+
         'ваш возраст:' +age + '\n'+
         'Ваш возраст в днях:'+ (age*365)+'\n'+
         'Через 5 лет вам будет:'+ (age +5)+'\n'+
